@@ -6,7 +6,7 @@ So I thought, why not build an assistant where users can simply ask where someth
 That's how I started working on TradeNav.
 
 ## How it works
-You can open the TradeNav assistant while browsing TradingView and ask questions in normal language, such as "Where can I find RSI?"
+We can open the TradeNav assistant while browsing TradingView and ask questions in normal language, such as "Where can I find Indicators?"
 The extension sends your question to a Spring Boot backend, which uses Gemini AI along with a collection of TradingView navigation data to generate an answer.
 
 ## Technologies that I used
