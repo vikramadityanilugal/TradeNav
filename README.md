@@ -19,7 +19,7 @@ The extension sends your question to a Spring Boot backend, which uses Gemini AI
 
 ## Current status
 The extension is working with TradingView, and the backend is deployed on Render.
-Backend: https://tradenav-jxtr.onrender.com
+The backend handles navigation requests from the extension and uses Gemini AI to generate responses.
 This is a personal learning project where I'm exploring browser extensions, backend development and integrating AI into real-world applications.
 
 ## What's next?
