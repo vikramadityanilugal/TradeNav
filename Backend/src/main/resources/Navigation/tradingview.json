@@ -1,0 +1,278 @@
+{
+  "app": "TradingView",
+  "assistant": "TradeNav",
+  "version": "1.0",
+  "purpose": "Help users find important TradingView navigation options and features.",
+
+  "navigation": {
+
+    "home": {
+      "name": "TradingView Home",
+      "items": [
+        {
+          "name": "Profile",
+          "type": "navigation",
+          "description": "Opens the user's TradingView profile area."
+        },
+        {
+          "name": "Upgrade",
+          "type": "navigation",
+          "description": "Opens TradingView's upgrade/subscription options."
+        },
+        {
+          "name": "Products",
+          "type": "menu",
+          "description": "TradingView product-related options."
+        },
+        {
+          "name": "Community",
+          "type": "menu",
+          "description": "TradingView community-related content."
+        },
+        {
+          "name": "Markets",
+          "type": "menu",
+          "description": "Access market-related information."
+        },
+        {
+          "name": "Brokers",
+          "type": "menu",
+          "description": "Access broker-related options."
+        },
+        {
+          "name": "More",
+          "type": "menu",
+          "description": "Contains additional TradingView options."
+        },
+        {
+          "name": "Market Summary",
+          "type": "section",
+          "description": "Summary of market information shown on the TradingView home page."
+        },
+        {
+          "name": "Major Indices",
+          "type": "section",
+          "description": "Displays major market indices."
+        },
+        {
+          "name": "Featured IPOs",
+          "type": "section",
+          "description": "Displays featured initial public offerings."
+        },
+        {
+          "name": "Community Ideas",
+          "type": "section",
+          "description": "Displays ideas shared by the TradingView community."
+        },
+        {
+          "name": "Indicators",
+          "type": "section",
+          "description": "Home-page content related to newly featured or discussed indicators."
+        },
+        {
+          "name": "Strategies",
+          "type": "section",
+          "description": "Home-page content related to trading strategies."
+        },
+        {
+          "name": "Top Stories and News",
+          "type": "section",
+          "description": "Displays important stories and market news."
+        },
+        {
+          "name": "US Stocks",
+          "type": "section",
+          "description": "Displays information related to US stocks."
+        },
+        {
+          "name": "Highest Volume Stocks",
+          "type": "market_list",
+          "url": "https://www.tradingview.com/markets/stocks-usa/market-movers-active/",
+          "description": "Shows US stocks with high trading volume."
+        },
+        {
+          "name": "Most Volatile Stocks",
+          "type": "market_list",
+          "url": "https://www.tradingview.com/markets/stocks-usa/market-movers-most-volatile/",
+          "description": "Shows highly volatile US stocks."
+        },
+        {
+          "name": "Stock Gainers",
+          "type": "market_list",
+          "url": "https://www.tradingview.com/markets/stocks-usa/market-movers-gainers/",
+          "description": "Shows stocks that are gaining."
+        },
+        {
+          "name": "Stock Losers",
+          "type": "market_list",
+          "description": "Shows stocks that are losing value."
+        }
+      ]
+    },
+
+    "instrument_search": {
+      "name": "Instrument Search",
+      "activation": [
+        "Search button",
+        "Ctrl+K"
+      ],
+      "purpose": "Find a specific trading instrument or symbol.",
+      "categories": [
+        {
+          "name": "Stocks",
+          "type": "instrument_category"
+        },
+        {
+          "name": "Funds",
+          "type": "instrument_category"
+        },
+        {
+          "name": "Futures",
+          "type": "instrument_category"
+        },
+        {
+          "name": "Forex",
+          "type": "instrument_category"
+        },
+        {
+          "name": "Crypto",
+          "type": "instrument_category"
+        },
+        {
+          "name": "Indices",
+          "type": "instrument_category"
+        },
+        {
+          "name": "Bonds",
+          "type": "instrument_category"
+        },
+        {
+          "name": "Economy",
+          "type": "instrument_category"
+        },
+        {
+          "name": "Options",
+          "type": "instrument_category"
+        }
+      ],
+      "example": {
+        "user_query": "Find XAUUSD",
+        "symbol": "XAUUSD",
+        "action": "Search for XAUUSD using instrument search."
+      }
+    },
+
+    "chart": {
+      "name": "Trading Chart",
+      "purpose": "Chart and analysis interface for a selected instrument.",
+
+      "visible_options": [
+        {
+          "name": "Symbol",
+          "example": "XAUUSD",
+          "type": "chart_information",
+          "description": "The currently selected trading instrument."
+        },
+        {
+          "name": "Timeframe",
+          "type": "chart_control",
+          "examples": [
+            "1m",
+            "3m",
+            "5m",
+            "15m"
+          ],
+          "description": "Changes the chart timeframe."
+        },
+        {
+          "name": "Indicators",
+          "type": "analysis_tool",
+          "description": "Opens indicators used for chart analysis."
+        },
+        {
+          "name": "Drawing Tools",
+          "type": "analysis_tool",
+          "description": "Provides tools for drawing and marking directly on the chart."
+        },
+        {
+          "name": "Alert",
+          "type": "chart_control",
+          "description": "Creates or manages alerts for the selected instrument."
+        },
+        {
+          "name": "Replay",
+          "type": "chart_control",
+          "description": "Opens chart replay functionality."
+        },
+        {
+          "name": "Undo",
+          "type": "chart_control",
+          "description": "Undoes the previous chart action."
+        },
+        {
+          "name": "Redo",
+          "type": "chart_control",
+          "description": "Redoes a previously undone chart action."
+        },
+        {
+          "name": "Chart Layout",
+          "type": "chart_control",
+          "description": "Controls the chart layout."
+        },
+        {
+          "name": "Trade",
+          "type": "trading_action",
+          "description": "Opens trading-related functionality."
+        },
+        {
+          "name": "Watchlist / Alerts Panel",
+          "type": "side_panel",
+          "description": "Right-side panel containing chart-related information and alerts."
+        },
+        {
+          "name": "Upgrade",
+          "type": "subscription",
+          "description": "Opens TradingView upgrade options."
+        }
+      ]
+    }
+  },
+
+  "example_user_queries": [
+    {
+      "query": "Where can I find XAUUSD?",
+      "target": "instrument_search",
+      "action": "Use Search or Ctrl+K and search for XAUUSD."
+    },
+    {
+      "query": "How do I add an indicator?",
+      "target": "chart.indicators",
+      "action": "Open Indicators from the chart toolbar."
+    },
+    {
+      "query": "How do I change the timeframe?",
+      "target": "chart.timeframe",
+      "action": "Use the timeframe control on the chart toolbar."
+    },
+    {
+      "query": "How do I set an alert?",
+      "target": "chart.alert",
+      "action": "Use the Alert option on the chart."
+    },
+    {
+      "query": "Where are the drawing tools?",
+      "target": "chart.drawing_tools",
+      "action": "Use the drawing tools available on the chart."
+    },
+    {
+      "query": "Where can I find high volume stocks?",
+      "target": "home.highest_volume_stocks",
+      "action": "Open the Highest Volume Stocks market list."
+    },
+    {
+      "query": "Where can I find volatile stocks?",
+      "target": "home.most_volatile_stocks",
+      "action": "Open the Most Volatile Stocks market list."
+    }
+  ]
+}
